@@ -21,6 +21,6 @@ from contact_app.views import contact, home
 
 urlpatterns = [
     path('admin/', admin.site.urls), 
-    path('', home), 
+    path('', home, name='index.html'), 
     path('contact/', contact),
 ]
