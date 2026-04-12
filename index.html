@@ -1,3 +1,4 @@
+{% load static %}
 <!DOCTYPE html>
 <html lang="en">
   <head>
@@ -7,20 +8,20 @@
     
     <link href="https://fonts.googleapis.com/css?family=Poppins:100,200,300,400,500,600,700,800,900" rel="stylesheet">
 
-    <link rel="stylesheet" href="css/open-iconic-bootstrap.min.css">
-    <link rel="stylesheet" href="css/animate.css">
+    <link rel="stylesheet" href="{% static 'css/open-iconic-bootstrap.min.css' %}">
+    <link rel="stylesheet" href="{% static 'css/animate.css' %}">
     
-    <link rel="stylesheet" href="css/owl.carousel.min.css">
-    <link rel="stylesheet" href="css/owl.theme.default.min.css">
-    <link rel="stylesheet" href="css/magnific-popup.css">
+    <link rel="stylesheet" href="{% static 'css/owl.carousel.min.css' %}">
+    <link rel="stylesheet" href="{% static 'css/owl.theme.default.min.css' %}">
+    <link rel="stylesheet" href="{% static 'css/magnific-popup.css' %}">
 
-    <link rel="stylesheet" href="css/aos.css">
+    <link rel="stylesheet" href="{% static 'css/aos.css' %}">
 
-    <link rel="stylesheet" href="css/ionicons.min.css">
+    <link rel="stylesheet" href="{% static 'css/ionicons.min.css' %}">
     
-    <link rel="stylesheet" href="css/flaticon.css">
-    <link rel="stylesheet" href="css/icomoon.css">
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="{% static 'css/flaticon.css' %}">
+    <link rel="stylesheet" href="{% static 'css/icomoon.css' %}">
+    <link rel="stylesheet" href="{% static 'css/style.css' %}">
 
 
 
@@ -141,7 +142,7 @@
 	      	<div class="overlay"></div>
 	         <div class="container">
 	          <div class="row d-md-flex no-gutters slider-text align-items-end justify-content-end" data-scrollax-parent="true">
-	          	<div class="one-third js-fullheight order-md-last img" style="background-image:url(images/profile_1.jpg);">
+	          	<div class="one-third js-fullheight order-md-last img" style="background-image:url({% static 'images/profile_1.jpg' %});">
 	          	 <div class="overlay"></div>
 	          	</div>
 		          <div class="one-forth d-flex  align-items-center ftco-animate" data-scrollax=" properties: { translateY: '70%' }">
@@ -188,10 +189,6 @@
 						<br>
 						<br>
 			            <h2>A Software developer</h2>
-						<!-- <h2 class="d-flex" style="margin-bottom: 0">With over 5 years of experience</h2> -->
-						<!-- <br> -->
-			          
-						<!--<a href="" class="btn btn-white btn-outline-white py-3 px-4">My works</a></p> -->
 		            </div>
 		          </div>
 	        	</div>
@@ -206,14 +203,13 @@
     	<div class="container">
 			<div class="row">
 				<div class="row d-flex align-items-stretch">
-				<!-- <div class="row d-flex"> -->
 					<div class="col-md-6 col-lg-5 d-flex">
 						<div class="img-about img d-flex align-items-stretch">
 							<div class="overlay">
 								<div class="row">
 									<div class="col-sm-6 col-md-5">
 									  <div class="about-img">
-										<img src="images/about-me.png" class="img-fluid rounded b-shadow-a" alt="">
+										<img src="{% static 'images/about-me.png' %}" class="img-fluid rounded b-shadow-a" alt="">
 									  </div>
 									</div>
 									<!-- Details next to profile image -->
@@ -221,7 +217,6 @@
 									  <div class="about-info">
 										<p><span class="title-s">Name: </span> <span>Rahul Chaugule</span></p>
 										<p><span class="title-s">Job Role: </span> <span>Software Developer</span></p>
-										<!--<p><span class="title-s">Experience: </span> <span>5 Years 3 Months</span></p>-->
 										<p><span class="title-s">Address: </span> <span>Maharastra,India</span></p>
 									  </div>
 									</div>
@@ -273,7 +268,6 @@
 								<p>accompanied by a bachelor's degree in engineering.Proficient in Python, C++, django, html, CSS, JavaScript, React.js, data analysis &amp; machine learning. </p>
 								<ul class="about-info mt-4 px-md-0 px-2">
 									<li class="d-flex"><span>Profile:</span> <span> Software developer &amp; Data Analytics</span></li>
-									<!--<li class="d-flex"><span>Domain:</span> <span>Retail, Ecommerce, BFSI &amp; Digital Marketing</span></li>-->
 									<li class="d-flex"><span>Education:</span> <span>Bachelor of Engineering</span></li>
 									<li class="d-flex"><span>Skills:</span> <span>Python,Data Analysis,Excel,C++,AWS,Web Development</span></li>
 									<li class="d-flex"><span>Language:</span> <span>Marathi,English,Hindi</span></li>
@@ -284,13 +278,8 @@
 							</div>
 						</div>
 
-
-						<!--<div class="counter-wrap ftco-animate d-flex mt-md-3">
+						<div class="counter-wrap ftco-animate d-flex mt-md-3">
 							<div class="text">
-								<p class="mb-4">
-									<span class="number" data-number="30">0</span> <span>+</span>
-									<span>&nbsp; Projects completed</span>-->
-								</p>
 								<p><a href="https://www.linkedin.com/in/rahul-chaugule-2677a2209?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app" class="btn btn-primary py-3 px-3">LinkedIn</a></p>
 							</div>
 						</div>
@@ -321,8 +310,25 @@
 		
 		    <div class="row justify-content-center">
 				<div class="col-md-6">
+                	<div class="resume-wrap ftco-animate">
+                		<span class="date">2025-Present</span>
+                		<h2>Software Developer</h2>
+                		<span class="position">NDTT</span>
+                		<p class="mt-4">
+                			NDTT is a growing technology company focused on innovative engineering and inspection solutions.
+                		</p>
+                		<ul>
+                			<li>Working as a <strong>Software Developer at NDTT</strong>, contributing to the development of advanced inspection systems.</li>
+                			<li>Developed a <strong>Pipe Inspection System</strong> using <strong>Python</strong>, integrating <strong>laser</strong> and <strong>gyro sensors</strong> for accurate internal pipe analysis.</li>
+                			<li>Built a standalone <strong>Python EXE application</strong> for real-time data processing and visualization.</li>
+                			<li>Implemented algorithms for defect detection, distance measurement, and alignment tracking inside pipelines.</li>
+                			<li>Designed and developed the user interface for monitoring inspection data and generating reports.</li>
+                		</ul>
+                	</div>
+                </div>
+				<div class="col-md-6">
 					<div class="resume-wrap ftco-animate">
-						<span class="date">2024-Present</span>
+						<span class="date">2024-2025</span>
 						<h2>Software Developer</h2>
 						<span class="position">Trustlink Technologies pvt.ltd</span>
 						<p class="mt-4">Trustlink is a startup company,the company have it own product octanet that made for isp. 
@@ -333,25 +339,25 @@
 							</ul>
 						</p>
 					</div>
-
 				</div>
 			
-
-				<!-- <div class="col-md-6">
-					<div class="resume-wrap ftco-animate">
-						<span class="date">2018-2021</span>
-						<h2>Senior Data Analyst</h2>
-						<span class="position">iQuanti</span>
-						<p class="mt-4">iQuanti is a data-driven digital marketing analytics and solutions company, helps top 100 global brands. 
-							<ul>
-								<li>Performed in-depth market research and analysis to create online pages. Resulted in ~100% website growth and 30% increase in conversion rate YoY.</li>
-								<li>Delivered multiple training and mentorship sessions on analytical tools like SQL, MS Excel, Power BI, Tableau and Python.</li>
-								<li>Performed migration and enhancements for merchandising dashboard, involved data integration and its feature improvement.</li>
-							</ul>
-						</p>
-					</div> -->
-
-				</div>
+				<div class="col-md-6">
+            	<div class="resume-wrap ftco-animate">
+            		<span class="date">2025</span>
+            		<h2>PHP Developer</h2>
+            		<span class="position">Agile AI Tech</span>
+            		<p class="mt-4">
+            			Worked on web application development and frontend systems.
+            		</p>
+            		<ul>
+            			<li>Worked as a <strong>PHP Developer at Agile AI Tech</strong> using <strong>Laravel</strong> framework.</li>
+            			<li>Developed and maintained backend functionalities for web applications.</li>
+            			<li>Built and customized modules for a <strong>Housing Management System</strong>.</li>
+            			<li>Handled frontend development using <strong>HTML, CSS, JavaScript</strong> for responsive UI.</li>
+            			<li>Collaborated with team members to improve application performance and usability.</li>
+            		</ul>
+            	</div>
+            </div>
 			</div>
 
 		<br>
@@ -364,6 +370,14 @@
 		<br>
 		
 			<div class="row">
+				<div class="col-md-6">
+    				<div class="resume-wrap ftco-animate">
+    					<span class="date">2025-2027</span>
+    					<h2>Master of Technology</h2>
+    					<span class="position">University of Mumbai</span>
+    					<p class="mt-4">Grade: First class distinction.</p>
+    				</div>
+    			</div>
     			<div class="col-md-6">
     				<div class="resume-wrap ftco-animate">
     					<span class="date">2021-2024</span>
@@ -372,20 +386,11 @@
     					<p class="mt-4">Grade: First class distinction.</p>
     				</div>
     			</div>
-
-    			<div class="col-md-6">
-    				<div class="resume-wrap ftco-animate">
-    					<span class="date">2018-2020</span>
-    					<h2>Higher Secondary School</h2>
-    					<span class="position">M.H junior College</span>
-    					<p class="mt-4">Grade: First class distinction.</p>
-    				</div>
-				</div>
     		</div>
 
     		<div class="row justify-content-center mt-5">
     			<div class="col-md-6 text-center ftco-animate">
-    				<p><a href="images/resume .png" class="btn btn-primary py-4 px-5">Download CV</a></p>
+    				<p><a href="{% static 'images/resume .png' %}" class="btn btn-primary py-4 px-5">Download CV</a></p>
     			</div>
     		</div>
     	</div>
@@ -405,7 +410,7 @@
         <div class="row d-flex">
           <div class="col-md-4 d-flex ftco-animate">
 				<div class="blog-entry justify-content-end">
-				<a href="" class="block-20 zoom-effect" style="background-image: url('images/proj_5.jpg');">
+				<a href="" class="block-20 zoom-effect" style="background-image: url('{% static 'images/proj_5.jpg' %}');">
 				</a>
 				<div class="text mt-3 float-right d-block">
 				  <h3 class="heading"><a href="">Customer Segmentation using clustering model</a></h3>
@@ -413,96 +418,67 @@
 				</div>
 			  </div>
 			</div>
-          <!-- <div class="col-md-4 d-flex ftco-animate">
-          	<div class="blog-entry justify-content-end">
-              <a href="" class="block-20 zoom-effect" style="background-image: url('images/proj_2.jpg');">
-              </a>
-              <div class="text mt-3 float-right d-block">
-
-                <h3 class="heading"><a href="https://github.com/rishabhnmishra/Python_Diwali_Sales_Analysis/blob/main/Diwali_Sales_Analysis.ipynb">Data Analysis using Python Project for Beginners</a></h3>
-                <p>Performed exploratory data analysis on diwali sales data using Python to improve the customer experience.</p>
-              </div>
-            </div>
-          </div> -->
+			<div class="col-md-4 d-flex ftco-animate">
+				<div class="blog-entry justify-content-end">
+				<a href="https://github.com/rahul21062002/student-management-system" target="_blank" class="block-20 zoom-effect" style="background-image: url('{% static 'images/proj_6.png' %}');">
+				</a>
+				<div class="text mt-3 float-right d-block">
+				  <h3 class="heading">
+					<a href="https://github.com/rahul21062002/student-management-system" target="_blank">
+						Student Management System
+					</a>
+				  </h3>
+				  <p>
+					Developed a Student Management System to manage student records, attendance, and academic details efficiently. 
+					Built using modern web technologies with a user-friendly interface for administrators and staff.
+				  </p>
+				</div>
+			  </div>
+			</div>
           <div class="col-md-4 d-flex ftco-animate">
           	<div class="blog-entry">
-              <a href="#" class="block-20 zoom-effect" style="background-image: url('images/proj_3.jpg');">
+              <a href="#" class="block-20 zoom-effect" style="background-image: url('{% static 'images/proj_3.jpg' %}');">
               </a>
               <div class="text mt-3 float-right d-block">
-
                 <h3 class="heading"><a href="#">Power BI Sales dashboard Project for Beginners</a></h3>
                 <p>Designed a power bi dashboard Store to track and analyze the online sales data acorss India.</p>
               </div>
             </div>
           </div>
-        </div>
-		<!-- added justify-content-center to center align the last two projects -->
-		<div class="row d-flex justify-content-center">  
-			<!-- <div class="col-md-4 d-flex ftco-animate">
-				<div class="blog-entry justify-content-end">
-				<a href="https://github.com/rishabhnmishra/sales_forecasting/tree/main" class="block-20 zoom-effect" style="background-image: url('images/proj_4.jpg');">
+		  <div class="col-md-4 d-flex ftco-animate">
+			<div class="blog-entry justify-content-end">
+			<a href="https://github.com/rahul21062002/Student-Domain-Suggestion-system" target="_blank" class="block-20 zoom-effect" style="background-image: url('{% static 'images/proj_7.png' %}');">
+			</a>
+			<div class="text mt-3 float-right d-block">
+			  <h3 class="heading">
+				<a href="https://github.com/rahul21062002/Student-Domain-Suggestion-system" target="_blank">
+					Student Domain & Project Suggestion System
 				</a>
-				<div class="text mt-3 float-right d-block">
-  
-				  <h3 class="heading"><a href="https://github.com/rishabhnmishra/sales_forecasting/tree/main">Sales Forecast- Time Series Forecasting</a></h3>
-				  <p>Used multiple machine learning models to forecast sales (retail store) and performed time series analysis.</p>
-				</div>
-			  </div>
-			</div> -->
+			  </h3>
+			  <p>
+				Developed a system that recommends suitable <strong>project domains</strong> and <strong>final year project ideas</strong> based on student skills, interests, and academic performance. 
+				Helps students choose the right domain and provides relevant project suggestions for better career direction.
+			  </p>
+			</div>
+		  </div>
+		</div>
+        </div>
+		<div class="row d-flex justify-content-center">  
 		 </div>
 	  </div>
     </section>
 
 	<section class="ftco-section ftco-no-pt ftco-no-pb ftco-counter img" id="section-counter">
-      <!-- <div class="container">
-		<div class="row d-md-flex align-items-center">
-          <div class="col-md d-flex justify-content-center counter-wrap ftco-animate">
-            <div class="block-18">
-              <div class="text">
-                <strong class="number" data-number="20">0</strong>
-                <span>Achievements</span>
-              </div>conta
-            </div>
-          </div>
-          <div class="col-md d-flex justify-content-center counter-wrap ftco-animate">
-            <div class="block-18">
-              <div class="text">
-                <strong class="number" data-number="30">0</strong>
-                <span>Projects</span>
-              </div>
-            </div>
-          </div>
-          <div class="col-md d-flex justify-content-center counter-wrap ftco-animate">
-            <div class="block-18">
-              <div class="text">
-                <strong class="number" data-number="1000">0</strong>
-                <span>Mentored Students</span>
-              </div>
-            </div>
-          </div>
-          <div class="col-md d-flex justify-content-center counter-wrap ftco-animate">
-            <div class="block-18">
-              <div class="text">
-                <strong class="number" data-number="500">0</strong>
-                <span>Cups of coffee</span>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-	 -->
-	  <div class="ftco-section ftco-hireme img margin-top" style="background-image: url(images/bg_1.jpg)">
-			<!-- <div class="container"> -->
-				<div class="row justify-content-center">
-					<div class="col-md-7 ftco-animate text-center">
-						<h2>More projects on<span> Github  </span> </h2>
-						<div class="heading"> <h4> I love to solve problems &amp; uncover hidden data stories </h4>
-						<br>
-						<p><a href="https://github.com/rahul21062002" class="btn btn-primary py-3 px-5">GitHub</a></p>
-						</div>
+	  <div class="ftco-section ftco-hireme img margin-top" style="background-image: url({% static 'images/bg_1.jpg' %})">
+			<div class="row justify-content-center">
+				<div class="col-md-7 ftco-animate text-center">
+					<h2>More projects on Github</h2>
+					<div class="heading"> <h4> I love to solve problems &amp; uncover hidden data stories </h4>
+					<br>
+					<p><a href="https://github.com/rahul21062002" class="btn btn-primary py-3 px-5">GitHub</a></p>
 					</div>
 				</div>
-			<!-- </div> -->
+			</div>
 		</div>
 	</section>
 
@@ -543,7 +519,7 @@
           			<span class="icon-paper-plane"></span>
           		</div>
           		<h3 class="mb-4">Email Address</h3>
-	            <p><a href="mailto:info@yoursite.com">rahulc21062002@gmail.com</a></p>
+	            <p><a href="mailto:rahulc21062002@gmail.com">rahulc21062002@gmail.com</a></p>
 	          </div>
           </div>
           <div class="col-md-6 col-lg-3 d-flex ftco-animate">
@@ -552,30 +528,51 @@
                     <span class="icon-globe"></span>
                 </div>
                 <h3 class="mb-4">Download Resume</h3>
-                <p><a href="images/resume .png" download>Click here to download</a></p>
+                <p><a href="{% static 'images/resume .png' %}" download>Click here to download</a></p>
             </div>
         </div>
+         </div>
 
-		  <!-- <div class="container">
-			<br>
-			<br>
-			<div class="row justify-content-center">
-				<div class="col-md-7 ftco-animate text-center">
-					<h2>Have a<span> Question?  </span> <a href="https://forms.gle/uLaTShUKXraAvHJ77" class="btn btn-primary py-3 px-5">Click Here</a> </h2>
-				</div>
-			</div>
-				<br>
-					<ul class="ftco-footer-social list-unstyled d-flex justify-content-center align-items-center mb-0">
-					  <li class="ftco-animate normal-txt">Find me on  </li>
-					  <li class="ftco-animate"><a href="https://www.youtube.com/@RishabhMishraOfficial"><span class="icon-youtube"></span></a></li>
-					  <li class="ftco-animate"><a href="https://www.linkedin.com/in/rishabhnmishra/"><span class="icon-linkedin"></span></a></li>  
-					  <li class="ftco-animate"><a href="https://twitter.com/rishabhnmishra"><span class="icon-twitter"></span></a></li>
-					  <li class="ftco-animate"><a href="https://twitter.com/rishabhnmishra"><span class="icon-facebook"></span></a></li>
-				      <li class="ftco-animate"><a href="https://www.instagram.com/rishabhnmishra/"><span class="icon-instagram"></span></a></li>
-					</ul>
-				<br>
-		   </div>
-   </div> -->
+<!-- CONTACT FORM -->
+<div class="row">
+    <div class="col-md-12 ftco-animate">
+        <div class="box p-4">
+            <h3 class="mb-4 text-center">Send Me a Message</h3>
+
+            <!-- SUCCESS MESSAGE -->
+            {% if messages %}
+                {% for message in messages %}
+                    <div class="alert alert-success text-center" role="alert">
+                        ✅ {{ message }}
+                    </div>
+                {% endfor %}
+            {% endif %}
+
+            <form method="POST" action="/contact/">
+                {% csrf_token %}
+
+                <div class="row">
+                    <div class="col-md-6">
+                        <input type="text" name="name" class="form-control mb-3" placeholder="Your Name" required>
+                    </div>
+                    <div class="col-md-6">
+                        <input type="email" name="email" class="form-control mb-3" placeholder="Your Email" required>
+                    </div>
+                </div>
+
+                <input type="text" name="subject" class="form-control mb-3" placeholder="Subject" required>
+
+                <textarea name="message" rows="6" class="form-control mb-3" placeholder="Message" required></textarea>
+
+                <div class="text-center">
+                    <button type="submit" class="btn btn-primary py-2 px-4">Send Message</button>
+                </div>
+            </form>
+
+        </div>
+	</div>
+</div>
+
  </section>
 
 
@@ -585,10 +582,7 @@
 		<div class="container">
 		  <div class="row">
 			<div class="col-md-12 text-center">
-  
-			  <p><!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
-	<!-- Copyright &copy;<script>document.write(new Date().getFullYear());</script> All rights reserved | This template is made with <i class="icon-heart color-danger" aria-hidden="true"></i> by <a href="https://colorlib.com" target="_blank">Colorlib</a> -->
-	<!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. --></p>
+			  <p></p>
 			</div>
 		  </div>
 		</div>
@@ -599,20 +593,20 @@
   <div id="ftco-loader" class="show fullscreen"><svg class="circular" width="48px" height="48px"><circle class="path-bg" cx="24" cy="24" r="22" fill="none" stroke-width="4" stroke="#eeeeee"/><circle class="path" cx="24" cy="24" r="22" fill="none" stroke-width="4" stroke-miterlimit="10" stroke="#F96D00"/></svg></div>
 
 
-  <script src="js/jquery.min.js"></script>
-  <script src="js/jquery-migrate-3.0.1.min.js"></script>
-  <script src="js/popper.min.js"></script>
-  <script src="js/bootstrap.min.js"></script>
-  <script src="js/jquery.easing.1.3.js"></script>
-  <script src="js/jquery.waypoints.min.js"></script>
-  <script src="js/jquery.stellar.min.js"></script>
-  <script src="js/owl.carousel.min.js"></script>
-  <script src="js/jquery.magnific-popup.min.js"></script>
-  <script src="js/aos.js"></script>
-  <script src="js/jquery.animateNumber.min.js"></script>
-  <script src="js/scrollax.min.js"></script>
+  <script src="{% static 'js/jquery.min.js' %}"></script>
+  <script src="{% static 'js/jquery-migrate-3.0.1.min.js' %}"></script>
+  <script src="{% static 'js/popper.min.js' %}"></script>
+  <script src="{% static 'js/bootstrap.min.js' %}"></script>
+  <script src="{% static 'js/jquery.easing.1.3.js' %}"></script>
+  <script src="{% static 'js/jquery.waypoints.min.js' %}"></script>
+  <script src="{% static 'js/jquery.stellar.min.js' %}"></script>
+  <script src="{% static 'js/owl.carousel.min.js' %}"></script>
+  <script src="{% static 'js/jquery.magnific-popup.min.js' %}"></script>
+  <script src="{% static 'js/aos.js' %}"></script>
+  <script src="{% static 'js/jquery.animateNumber.min.js' %}"></script>
+  <script src="{% static 'js/scrollax.min.js' %}"></script>
   
-  <script src="js/main.js"></script>
+  <script src="{% static 'js/main.js' %}"></script>
     
   </body>
 </html>
